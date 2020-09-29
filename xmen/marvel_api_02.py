@@ -10,7 +10,7 @@ XAVIER = 'http://gateway.marvel.com/v1/public/characters'
 ## Calculate a hash to pass through to our MARVEL API call
 ## Marvel API wants md5 calc md5(ts+privateKey+publicKey)
 def hashbuilder(timeywimey, pvkee, pubkee):
-    return hashlib.md5((timeywimey+pvkee+pubkee).encode('utf-8')).hexdigest()
+i    return hashlib.md5((timeywimey+pvkee+pubkee).encode('utf-8')).hexdigest()
 
 ## Perform a call to MARVEL Character API
 ## http://gateway.marvel.com/v1/public/characters
